@@ -33,13 +33,13 @@ console.log(`сумма яка округленна до 2 знаку після
 Виведіть чистий прибуток, якщо клієнт заплатив зі знижкою та собівартість товарів рівно в два рази нижче їх ціни?
 (Приклад: ціна була 260.66, знижка склала 10%, клієнт заплатив на 26 меньше, собівартість = 260 / 2 -> 130. Чистий прибуток = 130 - 26 -> 104) (Приклад 2: ціна була 100, знижка склала 90%, клієнт заплатив на 90 меньше, собівартість = 100 / 2 -> 50. Чистий прибуток = 50 - 90 -> -40) 
 */
-const minDis = 1;
-const maxDis = 100;
+const minDiscount = 1;
+const maxDiscount = 100;
 
-const sRound100 = Math.floor(Math.random() * (maxDis - minDis) + minDis);
-let dis = Math.floor(Math.random() * (maxDis - minDis) + minDis);
+const sumRound100 = Math.floor(Math.random() * (maxDis - minDis) + minDis);
+const discount = Math.floor(Math.random() * (maxDis - minDis) + minDis);
 
-let sumDis = Math.round((sRound100 - (sRound100 * (dis/100)))*100)/100;
+const sumDiscount = Math.round((sRound100 - (sRound100 * (dis/100)))*100)/100;
 
-let netProfit = Math.round(((sRound100/2) - (sRound100 * (dis/100)))*100)/100;
+const netProfit = Math.round(((sRound100/2) - (sRound100 * (dis/100)))*100)/100;
 
